@@ -1,0 +1,491 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    margin: 0;
+    padding: none;
+   overflow-x: hidden;
+   background-color: black;
+  
+    
+}
+
+
+.container
+{
+width: 100vw;
+height: 100vh;
+background-image: url('https://i.pinimg.com/originals/f1/ed/a4/f1eda4768df8d8135c779772f2833e88.gif');
+position: relative;
+background-size: cover;
+background-position: center;
+
+}
+
+#nav
+{
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+    
+    
+}
+
+#info
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    top: 30%;
+    left: 10%;
+    color: white;
+    position: relative;
+   
+}
+
+#info h1, p
+{
+    z-index: 1;
+}
+
+#bg
+{
+    width: 100vw;
+    height: 99.7vh;
+    object-fit: cover;
+    margin-top: -58rem;
+}
+
+
+#logo
+{    
+    width: 20vw;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    z-index: 1;
+    position: sticky;
+   
+}
+
+
+#contenidonav
+{
+
+  width: 50%;
+  height: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-right: 2rem;
+  margin-top: 1rem;
+
+}
+
+
+
+
+.btnSesion
+{
+    width: 20%;
+   height: 2rem;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-radius: 25px;
+    margin-top: 1rem;
+    
+
+}
+
+#btnContenido a
+{
+  text-decoration: none;
+  color: white;
+  
+}
+
+
+#enlaceuser
+{
+
+margin-left: 1rem;
+}
+
+.userimage
+{
+ 
+  border-radius: 50%;
+height: 5rem;
+width: 5rem;
+border: solid 3px white;
+
+}
+
+.userimage:hover
+{
+cursor: pointer;
+}
+
+.btnSesion:hover
+{
+    cursor: pointer;
+}
+
+
+.imgcover
+{
+    width: 100vw;
+    height: 99.7vh;
+    object-fit: cover;
+}
+
+.down
+{
+    
+    width: 100vw;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#btnDown
+{
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    position:sticky;
+    margin-top: 35rem;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnDown:hover
+{
+cursor: pointer;
+}
+
+
+
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 70vw;
+    height: 80vh;
+    
+  }
+
+  .modal-content button
+  {
+    background-color: white;
+    border: none;
+    font-size: xx-large;
+    cursor: pointer;
+    margin-left: 95%;
+  }
+
+  .secondcontent
+  {
+    display: flex;
+    
+  }
+
+  .carruselmodal
+  {
+   
+    width: 40%;
+    height: 100%;
+ 
+  
+    
+  }
+
+  .carruselmodal img
+  {
+    width: 100%;
+    height: 45rem;
+    border-radius: 25px;
+    object-fit: cover;
+    
+  }
+
+  .infomodal
+  {
+   
+    width: 60%;
+    height: 45rem;
+    padding-left: 1rem;
+    text-align: left;
+   
+    display: flex;
+    flex-direction: column;
+    
+
+    
+    
+   
+  }
+
+  .infomodal span
+  {
+    font-size: 20px;
+    font-weight: 100;
+
+   
+   
+  }
+
+  .inptform
+  {
+    width: 100%;
+    height: 3rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+  }
+
+  #Registrarse
+  {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+   
+    
+    
+  }
+
+  #enter
+  {
+    background-color: #9b9b9b;
+    color: white;
+    text-decoration: none;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+
+  }
+
+  #enter:hover
+  {
+    cursor: not-allowed;
+  }
+
+  #contenedor
+  {
+    width: 20rem;
+    display: flex;
+    background-color: white;
+  }
+
+
+  .disabled
+  {
+    background-color: rgb(48, 48, 48);
+  }
+
+  .disabled:hover
+  {
+    cursor: not-allowed;
+  }
+
+  .actualizar
+  {
+    background-image: url('https://www.chromethemer.com/download/hd-wallpapers/cyberpunk-3840x2160.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .formActualizar
+  {
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #imageChange
+  {
+    width: 15rem;
+    height: 15rem;
+   
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  #cerrarsesion
+  {
+    background-color: red;
+    color: black;
+    width: 6rem;
+    height: fit-content;
+    text-decoration: none;
+    margin-top: 1rem;
+   
+  }
+
+  #cambios
+  {
+ 
+    width: 90%;
+    height: 60%;
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  #cambios p
+  {
+    font-size: xx-large;
+  }
+
+  #inputcorreo
+  {
+    height: 5%;
+    width: 90%;
+    border-radius: 15px;
+    border: solid black;
+  }
+
+  #inicio
+  {
+    background-color: black;
+    color: white;
+    margin-top: -10rem;
+    text-decoration: none;
+  }
+
+
+@media (max-width:1300px) /*----------------------------------------------------------------------------- */
+{
+
+  #logo
+  {
+    width: 40vw;
+  }
+
+
+  .btnSesion
+  {
+    width: 30%;
+  }
+
+  
+  .carruselmodal img
+  {
+    width: 100%;
+    height: 40rem;
+    border-radius: 25px;
+    object-fit: cover;
+    
+  }
+  
+  #imageChange
+  {
+    margin-top: 1rem;
+    width: 30%;
+   
+  
+  }
+
+  
+  .formActualizar
+  {
+    width: 80vw;
+    height: 80vh;
+   
+  }
+
+}
+
+
+
+@media (max-width:500px) /*----------------------------------------------------------------------------- */
+{
+#logo
+{
+  width: 30vw;
+}
+
+#contenidonav
+{
+  width: 70%;
+}
+
+
+.btnSesion
+{
+  width: 40%;
+}
+
+.carruselmodal img
+  {
+    display:none;
+    
+  }
+
+  .carruselmodal
+  {
+   
+    display: none;
+ 
+  
+    
+  }
+
+  
+  #imageChange
+  {
+    width: 40%;
+  
+  }
+
+
+
+}
